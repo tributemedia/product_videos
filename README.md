@@ -4,7 +4,7 @@ Import support videos from copiercatalog.com, and provide a search fucntionality
 ## Install
 
 1. Upload module and enable as with any Drupal module.
-2. Paste the following code after the closing `</div>` tag for the page. Generally this is the `<div>` with the class of page.
+2. Paste the following code into your page.tpl.php, after the closing `</div>` tag for the page. Generally this is the `<div>` with the class of page.
 ```
     <div id="product-video-lightbox" class="hide">
       <div id="close-box">X</div>
@@ -14,3 +14,4 @@ Import support videos from copiercatalog.com, and provide a search fucntionality
     </div>
     <div id="pvl-overlay" class="hide"></div>
 ```
+3. Create a Video Feed node with the appropriate feed URL.
