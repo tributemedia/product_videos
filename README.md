@@ -1,2 +1,2 @@
-# product_videos
+# Product Videos
 Import support videos from copiercatalog.com, and provide a search fucntionality to find the videos of interest.
