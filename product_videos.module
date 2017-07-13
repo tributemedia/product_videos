@@ -1,0 +1,25 @@
+<?php
+/**
+ * @file
+ * Code for the Product Videos feature.
+ */
+
+include_once 'product_videos.features.inc';
+
+// =====================
+// = Add Node Template =
+// =====================
+
+/**
+ * Implements hook_theme().
+ */
+function product_videos_theme($existing, $type, $theme, $path) {
+  $theme = array();
+  $theme['node__directory_entry'] = array(
+    'render element' => 'content',
+    'base hook' => 'node',
+    'template' => 'node--product_video',
+    'path' => drupal_get_path('module', 'product_videos') . '/templates',
+  );
+  return $theme;
+}
