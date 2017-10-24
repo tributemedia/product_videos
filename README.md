@@ -15,5 +15,6 @@ Import support videos from copiercatalog.com, and provide a search fucntionality
     <div id="pvl-overlay" class="hide"></div>
 ```
 3. You may need to apply this patch to the video_embed_field module, to expose the video embed fields to the feeds importers.
- https://www.drupal.org/files/video_embed_field-add-feeds-mapper-functionality-1306324-3.patch
+    https://www.drupal.org/files/video_embed_field-add-feeds-mapper-functionality-1306324-3.patch. 
+    See this issue for more information:https://www.drupal.org/node/1306324
 4. Create a Video Feed node with the appropriate feed URL.
