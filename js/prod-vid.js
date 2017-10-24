@@ -30,7 +30,8 @@ $(document).ready(function() {
   
   $('.video-lightbox').click(function() {
     var videoSrc = $(this).attr('vid-src');
-    videoSrc = videoSrc.replace('watch?v=', 'embed/') + '?rel=0';
+    videoSrc = videoSrc.replace('watch?v=', 'embed/');
+    videoSrc = videoSrc.split('&')[0] + '?rel=0';
     $('#video-frame iframe').attr('src', videoSrc);
     $('#pvl-overlay').removeClass('hide');
     $('#product-video-lightbox').removeClass('hide');
